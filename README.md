@@ -1,0 +1,2 @@
+# money-bag-game-HTML-CSS-javaScript
+The game functions as follows:  There are 16 bags to select from each with values ranging from R 500 - R 250 000, a player can then select a bag that they want to be theirs and one other bag is selected randomly. The player then gets a chance to switch bags or keep their own. Thereafter there must be a way to reveal the amounts won &amp; a way to replay the game. 
