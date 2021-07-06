@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Money Bags Game</title>
+    <style>
+      #game-board {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 12px;
+
+        max-width: 512px;
+      }
+
+      .bag {
+        border: 1px solid black;
+        padding: 4px;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 24px;
+        grid-gap: 4px;
+
+        align-items: center;
+        justify-content: center;
+      }
+
+      .bag[data-selected="true"] {
+        background: yellowgreen;
+      }
+
+      .bag-value {
+        background: white;
+        color: black;
+        text-align: center;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      #game-status {
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="game-board"></div>
+    <div id="game-status">
+      <div class="hidden" id="game-status-001">
+        <span>SELECT A BAG</span>
+      </div>
+      <div class="hidden" id="game-status-002">
+        <span>DO YOU WANT TO CHANGE YOUR BAG?</span><br />
+        <button id="button-yes">YES</button> <button id="button-no">NO</button>
+      </div>
+      <div class="hidden" id="game-status-003">
+        <span>YOUR PRIZE IS: <span id="prize-output"></span> RAND</span>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
